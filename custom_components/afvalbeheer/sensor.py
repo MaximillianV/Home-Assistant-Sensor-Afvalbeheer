@@ -593,6 +593,8 @@ class AfvalwijzerCollector(WasteCollector):
         self.apikey = '5ef443e778f41c4f75c69459eea6e6ae0c2d92de729aa0fc61653815fbd6a8ca'
         if self.waste_collector == "rova":
             self.waste_collector_url = "inzamelkalender." + self.waste_collector
+        elif self.waste_collector == "afvalstoffendienstkalender":
+            self.waste_collector_url = "afvalstoffendienstkalender"
         else:
             self.waste_collector_url = self.waste_collector
 
