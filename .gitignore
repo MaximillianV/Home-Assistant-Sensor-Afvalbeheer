@@ -6,5 +6,6 @@ API_SPLIT_PLAN.md
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
 ha_forum_blog_post.md
 AGENTS.md

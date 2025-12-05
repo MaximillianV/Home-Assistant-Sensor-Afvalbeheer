@@ -38,10 +38,9 @@ class WasteCollector(ABC):
                 if from_type.lower() in name.lower():
                     return to_type
         # Priority 2: Collector-specific mapping
-        if self.WASTE_TYPE_MAPPING:
-            for from_type, to_type in self.WASTE_TYPE_MAPPING.items():
-                if from_type.lower() in name.lower():
-                    return to_type
+        for from_type, to_type in self.WASTE_TYPE_MAPPING.items():
+            if from_type.lower() in name.lower():
+                return to_type
         # Priority 3: Global mapping
         for from_type, to_type in GLOBAL_WASTE_TYPE_MAPPING.items():
             if from_type.lower() in name.lower():
