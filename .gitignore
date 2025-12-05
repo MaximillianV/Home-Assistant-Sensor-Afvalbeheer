@@ -3,6 +3,8 @@ CLAUDE.md
 CONFIG_FLOW_FIX_PLAN.md
 API_SPLIT_PLAN.md
 .claude/
-custom_components/afvalbeheer/__pycache__/
+__pycache__/
+*.pyc
+*.pyo
 ha_forum_blog_post.md
 AGENTS.md
