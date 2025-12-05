@@ -45,28 +45,6 @@ class OpzetCollector(WasteCollector):
     """
     Collector for Opzet waste data.
     """
-    WASTE_TYPE_MAPPING = {
-        'pbd/papier': WASTE_TYPE_PAPER_PMD,
-        'snoeiafval': WASTE_TYPE_BRANCHES,
-        'sloop': WASTE_TYPE_BULKLITTER,
-        'glas': WASTE_TYPE_GLASS,
-        'duobak': WASTE_TYPE_GREENGREY,
-        'groente': WASTE_TYPE_GREEN,
-        'gft': WASTE_TYPE_GREEN,
-        'groene container': WASTE_TYPE_GREEN,
-        'chemisch': WASTE_TYPE_KCA,
-        'kca': WASTE_TYPE_KCA,
-        'tariefzak restafval': WASTE_TYPE_GREY_BAGS,
-        'restafvalzakken': WASTE_TYPE_GREY_BAGS,
-        'rest': WASTE_TYPE_GREY,
-        'grijze container': WASTE_TYPE_GREY,
-        'plastic': WASTE_TYPE_PACKAGES,
-        'papier': WASTE_TYPE_PAPER,
-        'textiel': WASTE_TYPE_TEXTILE,
-        'kerstb': WASTE_TYPE_TREE,
-        'pmd': WASTE_TYPE_PACKAGES,
-        'pbd': WASTE_TYPE_PACKAGES,
-    }
 
     def __init__(self, hass, waste_collector, postcode, street_number, suffix, custom_mapping):
         super().__init__(hass, waste_collector, postcode, street_number, suffix, custom_mapping)

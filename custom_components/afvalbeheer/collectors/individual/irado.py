@@ -16,12 +16,6 @@ class IradoCollector(WasteCollector):
     """
     Collector for Irado waste data.
     """
-    WASTE_TYPE_MAPPING = {
-        'gft': WASTE_TYPE_GREEN,
-        'papier': WASTE_TYPE_PAPER,
-        'pmd': WASTE_TYPE_PACKAGES,
-        'rest': WASTE_TYPE_GREY,
-    }
 
     def __init__(self, hass, waste_collector, postcode, street_number, suffix, custom_mapping):
         super().__init__(hass, waste_collector, postcode, street_number, suffix, custom_mapping)

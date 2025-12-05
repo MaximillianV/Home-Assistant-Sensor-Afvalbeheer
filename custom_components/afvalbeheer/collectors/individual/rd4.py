@@ -20,22 +20,6 @@ class RD4Collector(WasteCollector):
     """
     Collector for RD4 waste data.
     """
-    WASTE_TYPE_MAPPING = {
-        'pruning': WASTE_TYPE_BRANCHES,
-        # 'sloop': WASTE_TYPE_BULKLITTER,
-        # 'glas': WASTE_TYPE_GLASS,
-        # 'duobak': WASTE_TYPE_GREENGREY,
-        # 'groente': WASTE_TYPE_GREEN,
-        'gft': WASTE_TYPE_GREEN,
-        # 'chemisch': WASTE_TYPE_KCA,
-        # 'kca': WASTE_TYPE_KCA,
-        'residual': WASTE_TYPE_GREY,
-        # 'plastic': WASTE_TYPE_PACKAGES,
-        'paper': WASTE_TYPE_PAPER,
-        'best_bag': "best-tas",
-        'christmas_trees': WASTE_TYPE_TREE,
-        'pmd': WASTE_TYPE_PACKAGES,
-    }
 
     def __init__(self, hass, waste_collector, postcode, street_number, suffix, custom_mapping):
         super().__init__(hass, waste_collector, postcode, street_number, suffix, custom_mapping)

@@ -25,11 +25,6 @@ class ReinisCollector(WasteCollector):
     """
     Collector for Reinis waste data.
     """
-    WASTE_TYPE_MAPPING = {
-        'Groente': WASTE_TYPE_GREEN,
-        'Plastic': WASTE_TYPE_PACKAGES,
-        'Papier': WASTE_TYPE_PAPER,
-    }
 
     def __init__(self, hass, waste_collector, postcode, street_number, suffix, custom_mapping):
         super().__init__(hass, waste_collector, postcode, street_number, suffix, custom_mapping)

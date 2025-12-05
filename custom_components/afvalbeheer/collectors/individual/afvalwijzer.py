@@ -21,26 +21,6 @@ class AfvalwijzerCollector(WasteCollector):
     """
     Collector for Afvalwijzer waste data.
     """
-    WASTE_TYPE_MAPPING = {
-        'dhm': WASTE_TYPE_PAPER_PMD,
-        'restgft': WASTE_TYPE_GREENGREY,
-        'takken': WASTE_TYPE_BRANCHES,
-        'grofvuil': WASTE_TYPE_BULKLITTER,
-        'tuinafval': WASTE_TYPE_BULKYGARDENWASTE,
-        'glas': WASTE_TYPE_GLASS,
-        'gft': WASTE_TYPE_GREEN,
-        'keukenafval': WASTE_TYPE_GREEN,
-        'kcalocatie': WASTE_TYPE_KCA_LOCATION,
-        'kca': WASTE_TYPE_KCA,
-        'restafval': WASTE_TYPE_GREY,
-        'plastic': WASTE_TYPE_PACKAGES,
-        'gkbp': WASTE_TYPE_PACKAGES,
-        'papier': WASTE_TYPE_PAPER,
-        'textiel': WASTE_TYPE_TEXTILE,
-        'kerstbomen': WASTE_TYPE_TREE,
-        'pd': WASTE_TYPE_PACKAGES,
-        'md': WASTE_TYPE_PACKAGES,
-    }
 
     def __init__(self, hass, waste_collector, postcode, street_number, suffix, custom_mapping):
         super().__init__(hass, waste_collector, postcode, street_number, suffix, custom_mapping)
