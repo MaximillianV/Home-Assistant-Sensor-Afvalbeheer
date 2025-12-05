@@ -20,32 +20,6 @@ class RecycleApp(WasteCollector):
     """
     Collector for RecycleApp waste data.
     """
-    WASTE_TYPE_MAPPING = {
-        'grof': WASTE_TYPE_BULKLITTER,
-        # 'glas': WASTE_TYPE_GLASS,
-        'glas': WASTE_TYPE_GLASS,
-        # 'duobak': WASTE_TYPE_GREENGREY,
-        'groente': WASTE_TYPE_GREEN,
-        'gft': WASTE_TYPE_GREEN,
-        # 'chemisch': WASTE_TYPE_KCA,
-        # 'kca': WASTE_TYPE_KCA,
-        'huisvuil': WASTE_TYPE_GREY,
-        'rest': WASTE_TYPE_GREY,
-        'ordures ménagères': WASTE_TYPE_GREY,
-        # 'plastic': WASTE_TYPE_PACKAGES,
-        'papier': WASTE_TYPE_PAPER,
-        'textiel': WASTE_TYPE_TEXTILE,
-        # 'kerstb': WASTE_TYPE_TREE,
-        'pmd': WASTE_TYPE_PACKAGES,
-        'gemengde': WASTE_TYPE_PLASTIC,
-        'snoeihout': WASTE_TYPE_BRANCHES,
-        'zachte plastics': WASTE_TYPE_SOFT_PLASTIC,
-        'roze zak': WASTE_TYPE_SOFT_PLASTIC,
-        'déchets résiduels': WASTE_TYPE_GREY,
-        'déchets ménagers résiduels': WASTE_TYPE_GREY,
-        'déchets organiques': WASTE_TYPE_GREEN,
-        'omb': WASTE_TYPE_GREY,
-    }
 
     def __init__(self, hass, waste_collector, postcode, street_number, suffix, custom_mapping, street_name):
         super().__init__(hass, waste_collector, postcode, street_number, suffix, custom_mapping)

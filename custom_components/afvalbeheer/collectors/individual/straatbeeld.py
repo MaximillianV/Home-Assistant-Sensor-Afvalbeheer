@@ -19,13 +19,6 @@ class StraatbeeldCollector(WasteCollector):
     """
     Collector for Straatbeeld waste data.
     """
-    WASTE_TYPE_MAPPING = {
-        'gft': WASTE_TYPE_GREEN,
-        'rest': WASTE_TYPE_GREY,
-        'pmd': WASTE_TYPE_PACKAGES,
-        'papier': WASTE_TYPE_PAPER,
-        'kerstboom': WASTE_TYPE_TREE,
-    }
 
     def __init__(self, hass, waste_collector, postcode, street_number, suffix, custom_mapping):
         super().__init__(hass, waste_collector, postcode, street_number, suffix, custom_mapping)

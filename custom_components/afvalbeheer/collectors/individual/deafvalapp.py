@@ -16,13 +16,6 @@ class DeAfvalAppCollector(WasteCollector):
     """
     Collector for DeAfvalApp waste data.
     """
-    WASTE_TYPE_MAPPING = {
-        'gemengde plastics': WASTE_TYPE_PLASTIC,
-        'zak_blauw': WASTE_TYPE_GREY,
-        'pbp': WASTE_TYPE_PACKAGES,
-        'rest': WASTE_TYPE_GREY,
-        'kerstboom': WASTE_TYPE_TREE
-    }
 
     def __init__(self, hass, waste_collector, postcode, street_number, suffix, custom_mapping):
         super().__init__(hass, waste_collector, postcode, street_number, suffix, custom_mapping)

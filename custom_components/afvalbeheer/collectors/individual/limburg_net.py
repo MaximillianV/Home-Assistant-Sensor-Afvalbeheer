@@ -20,25 +20,6 @@ class LimburgNetCollector(WasteCollector):
     """
     Collector for Limburg.net waste data.
     """
-    WASTE_TYPE_MAPPING = {
-        # 'tak-snoeiafval': WASTE_TYPE_BRANCHES,
-        # 'gemengde plastics': WASTE_TYPE_PLASTIC,
-        'Grofvuil': WASTE_TYPE_BULKLITTER,
-        'Groenafval': WASTE_TYPE_BULKYGARDENWASTE,
-        'Tuin- En Snoeiafval': WASTE_TYPE_BULKYGARDENWASTE,
-        'Tuinafval': WASTE_TYPE_BULKYGARDENWASTE,
-        'Keukenafval': WASTE_TYPE_GREEN,
-        # 'grof huisvuil afroep': WASTE_TYPE_BULKLITTER,
-        # 'tak-snoeiafval': WASTE_TYPE_BULKYGARDENWASTE,
-        'Glas': WASTE_TYPE_GLASS,
-        'GFT': WASTE_TYPE_GREEN,
-        # 'batterij': WASTE_TYPE_KCA,
-        'Huisvuil': WASTE_TYPE_GREY,
-        'PMD': WASTE_TYPE_PACKAGES,
-        'Papier': WASTE_TYPE_PAPER,
-        'Textiel': WASTE_TYPE_TEXTILE,
-        # 'kerstboom': WASTE_TYPE_TREE,
-    }
 
     def __init__(self, hass, waste_collector, postcode, street_number, suffix, custom_mapping, street_name, city_name):
         super().__init__(hass, waste_collector, postcode, street_number, suffix, custom_mapping)

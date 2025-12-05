@@ -16,10 +16,6 @@ class CleanprofsCollector(WasteCollector):
     """
     Collector for Cleanprofs waste data.
     """
-    WASTE_TYPE_MAPPING = {
-        'GFT': WASTE_TYPE_GREEN,
-        'RST': WASTE_TYPE_GREY,
-    }
 
     def __init__(self, hass, waste_collector, postcode, street_number, suffix, custom_mapping):
         super().__init__(hass, waste_collector, postcode, street_number, suffix, custom_mapping)

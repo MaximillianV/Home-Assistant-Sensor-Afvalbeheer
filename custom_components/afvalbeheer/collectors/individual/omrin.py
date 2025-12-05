@@ -24,24 +24,6 @@ class OmrinCollector(WasteCollector):
     """
     Collector for Omrin waste data.
     """
-    WASTE_TYPE_MAPPING = {
-        # 'BRANCHES': WASTE_TYPE_BRANCHES,
-        'Grofvuil': WASTE_TYPE_BULKLITTER,
-        'Grofvuil en elektrische apparaten': WASTE_TYPE_BULKLITTER,
-        # 'BULKYGARDENWASTE': WASTE_TYPE_BULKYGARDENWASTE,
-        # 'GLASS': WASTE_TYPE_GLASS,
-        'Biobak op afroep': WASTE_TYPE_GREEN,
-        'Biobak': WASTE_TYPE_GREEN,
-        'GFT': WASTE_TYPE_GREEN,
-        # 'GREY': WASTE_TYPE_GREY,
-        'KCA': WASTE_TYPE_KCA,
-        'Chemisch afval': WASTE_TYPE_KCA,
-        'Sortibak': WASTE_TYPE_SORTI,
-        'Papier': WASTE_TYPE_PAPER,
-        # 'REMAINDER': WASTE_TYPE_REMAINDER,
-        # 'TEXTILE': WASTE_TYPE_TEXTILE,
-        # 'TREE': WASTE_TYPE_TREE,
-    }
 
     def __init__(self, hass, waste_collector, postcode, street_number, suffix, custom_mapping):
         super().__init__(hass, waste_collector, postcode, street_number, suffix, custom_mapping)

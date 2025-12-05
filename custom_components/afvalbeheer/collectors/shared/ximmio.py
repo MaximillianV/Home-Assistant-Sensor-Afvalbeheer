@@ -23,23 +23,6 @@ class XimmioCollector(WasteCollector):
     """
     Collector for Ximmio waste data.
     """
-    WASTE_TYPE_MAPPING = {
-        'BRANCHES': WASTE_TYPE_BRANCHES,
-        'BULKLITTER': WASTE_TYPE_BULKLITTER,
-        'BULKYGARDENWASTE': WASTE_TYPE_BULKYGARDENWASTE,
-        'BULKYRESTWASTE': WASTE_TYPE_PMD_GREY,
-        'GLASS': WASTE_TYPE_GLASS,
-        'GREENGREY': WASTE_TYPE_GREENGREY,
-        'GREEN': WASTE_TYPE_GREEN,
-        'GREY': WASTE_TYPE_GREY,
-        'KCA': WASTE_TYPE_KCA,
-        'PLASTIC': WASTE_TYPE_PACKAGES,
-        'PACKAGES': WASTE_TYPE_PACKAGES,
-        'PAPER': WASTE_TYPE_PAPER,
-        'REMAINDER': WASTE_TYPE_REMAINDER,
-        'TEXTILE': WASTE_TYPE_TEXTILE,
-        'TREE': WASTE_TYPE_TREE,
-    }
 
     XIMMIO_URLS = {
         'avalex': "https://wasteprod2api.ximmio.com",

@@ -20,13 +20,8 @@ class AmsterdamCollector(WasteCollector):
     """
     Collector for Amsterdam waste data.
     """
+    # Amsterdam-specific mapping: plastic goes to PMD-Restafval instead of PMD
     WASTE_TYPE_MAPPING = {
-        'ga': WASTE_TYPE_BULKLITTER,
-        'glas': WASTE_TYPE_GLASS,
-        'gft': WASTE_TYPE_GREEN,
-        'rest': WASTE_TYPE_GREY,
-        'papier': WASTE_TYPE_PAPER,
-        'textiel': WASTE_TYPE_TEXTILE,
         'plastic': WASTE_TYPE_PMD_GREY,
     }
     

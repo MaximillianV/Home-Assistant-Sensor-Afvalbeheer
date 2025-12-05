@@ -19,15 +19,6 @@ class MontferlandNetCollector(WasteCollector):
     """
     Collector for Montferland waste data.
     """
-    WASTE_TYPE_MAPPING = {
-        'Glas': WASTE_TYPE_GLASS,
-        'GFT': WASTE_TYPE_GREEN,
-        'Rest afval': WASTE_TYPE_GREY,
-        'PMD': WASTE_TYPE_PACKAGES,
-        'Papier': WASTE_TYPE_PAPER,
-        'Textiel': WASTE_TYPE_TEXTILE,
-        # 'kerstboom': WASTE_TYPE_TREE,
-    }
 
     def __init__(self, hass, waste_collector, postcode, street_number, suffix, custom_mapping):
         super().__init__(hass, waste_collector, postcode, street_number, suffix, custom_mapping)

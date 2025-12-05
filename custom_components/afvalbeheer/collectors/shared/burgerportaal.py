@@ -35,14 +35,6 @@ class BurgerportaalCollector(WasteCollector):
     """
     Collector for Burgerportaal waste data.
     """
-    WASTE_TYPE_MAPPING = {
-        'gft': WASTE_TYPE_GREEN,
-        'opk': WASTE_TYPE_PAPER,
-        'pmdrest': WASTE_TYPE_PMD_GREY,
-        'rest': WASTE_TYPE_GREY,
-        'pmd': WASTE_TYPE_PACKAGES,
-        'papier': WASTE_TYPE_PAPER
-    }
 
     def __init__(self, hass, waste_collector, postcode, street_number, suffix, custom_mapping):
         super().__init__(hass, waste_collector, postcode, street_number, suffix, custom_mapping)

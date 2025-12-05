@@ -17,21 +17,6 @@ class CirculusCollector(WasteCollector):
     """
     Collector for Circulus waste data.
     """
-    WASTE_TYPE_MAPPING = {
-        # 'BRANCHES': WASTE_TYPE_BRANCHES,
-        # 'BULKLITTER': WASTE_TYPE_BULKLITTER,
-        # 'BULKYGARDENWASTE': WASTE_TYPE_BULKYGARDENWASTE,
-        'DROCO': WASTE_TYPE_PAPER,
-        # 'GLASS': WASTE_TYPE_GLASS,
-        'GFT': WASTE_TYPE_GREEN,
-        'REST': WASTE_TYPE_GREY,
-        # 'KCA': WASTE_TYPE_KCA,
-        'ZWAKRA': WASTE_TYPE_PACKAGES,
-        'PMD': WASTE_TYPE_PACKAGES,
-        'PAP': WASTE_TYPE_PAPER,
-        # 'TEXTILE': WASTE_TYPE_TEXTILE,
-        # 'TREE': WASTE_TYPE_TREE,
-    }
 
     def __init__(self, hass, waste_collector, postcode, street_number, suffix, custom_mapping):
         super().__init__(hass, waste_collector, postcode, street_number, suffix, custom_mapping)

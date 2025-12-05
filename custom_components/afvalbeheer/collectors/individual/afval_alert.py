@@ -16,21 +16,6 @@ class AfvalAlertCollector(WasteCollector):
     """
     Collector for AfvalAlert waste data.
     """
-    WASTE_TYPE_MAPPING = {
-        # 'tak-snoeiafval': WASTE_TYPE_BRANCHES,
-        # 'gemengde plastics': WASTE_TYPE_PLASTIC,
-        # 'grof huisvuil': WASTE_TYPE_BULKLITTER,
-        # 'grof huisvuil afroep': WASTE_TYPE_BULKLITTER,
-        # 'tak-snoeiafval': WASTE_TYPE_BULKYGARDENWASTE,
-        # 'fles-groen-glas': WASTE_TYPE_GLASS,
-        'gft': WASTE_TYPE_GREEN,
-        # 'batterij': WASTE_TYPE_KCA,
-        'rest': WASTE_TYPE_GREY,
-        'milb': WASTE_TYPE_MILIEUB,
-        # 'p-k': WASTE_TYPE_PAPER,
-        # 'shirt-textiel': WASTE_TYPE_TEXTILE,
-        'kerst': WASTE_TYPE_TREE,
-    }
 
     def __init__(self, hass, waste_collector, postcode, street_number, suffix, custom_mapping):
         super().__init__(hass, waste_collector, postcode, street_number, suffix, custom_mapping)
